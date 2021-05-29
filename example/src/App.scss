@@ -1,0 +1,100 @@
+$primary-color: rgb(25, 12, 39);
+
+.App {
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  min-height: 100vh;
+
+  aside,
+  section {
+    width: 50%;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    header {
+      margin-bottom: 3rem;
+
+      h1 {
+        font-size: 4rem;
+        color: $primary-color;
+      }
+
+      span {
+        sup {
+          opacity: 0.75;
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    main {
+      pre {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background-color: $primary-color;
+        color: white;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & > div {
+      max-width: 500px;
+      border-left: 10px solid $primary-color;
+      padding-left: 1.5rem;
+
+      header {
+        margin-bottom: 0.75rem;
+
+        span {
+          opacity: 0.8;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        margin-top: 1rem;
+        outline: none;
+        border: none;
+        padding: 0.5em 0.75rem;
+        border-radius: 0.25rem;
+        font-weight: 600;
+        color: $primary-color;
+        transition: ease-in-out 0.1s;
+
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .App {
+    flex-direction: column;
+
+    aside,
+    section {
+      width: 100%;
+      height: auto;
+
+      & > div {
+        max-width: unset;
+      }
+    }
+  }
+}

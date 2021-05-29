@@ -1,0 +1,116 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
+.App aside,
+.App section {
+  width: 50%;
+}
+
+.App aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App aside header {
+  margin-bottom: 3rem;
+}
+
+.App aside header h1 {
+  font-size: 4rem;
+  color: #190c27;
+}
+
+.App aside header span sup {
+  opacity: 0.75;
+  font-size: 0.75rem;
+}
+
+.App aside main pre {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #190c27;
+  color: white;
+  margin-top: 2rem;
+}
+
+.App section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App section > div {
+  max-width: 500px;
+  border-left: 10px solid #190c27;
+  padding-left: 1.5rem;
+}
+
+.App section > div header {
+  margin-bottom: 0.75rem;
+}
+
+.App section > div header span {
+  opacity: 0.8;
+}
+
+.App section > div button {
+  cursor: pointer;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5em 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  color: #190c27;
+  -webkit-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+}
+
+.App section > div button:hover {
+  background-color: #190c27;
+  color: #fff;
+}
+
+@media screen and (max-width: 840px) {
+  .App {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App aside,
+  .App section {
+    width: 100%;
+    height: auto;
+  }
+  .App aside > div,
+  .App section > div {
+    max-width: unset;
+  }
+}
+/*# sourceMappingURL=App.css.map */
