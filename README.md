@@ -15,7 +15,7 @@ npm install --save react-clamped
 ```tsx
 import React, { Component } from 'react'
 
-import { Clamped} from 'react-clamped'
+import { Clamped } from 'react-clamped'
 
 class Example extends Component {
   render() {
