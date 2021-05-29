@@ -67,6 +67,14 @@ const Card = () => {
 - isClamped : Boolean
     This prop determines if the text should be truncated. The "**isClamped**" can be used in both "Clamped" component as a prop and in "useClamped" hook as an object entry. This prop can be very handy if you want to make a "show more" button. The default value if **true**.
 
+
+*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item.
+
 ## License
 
 MIT © [XenoverseUp](https://github.com/XenoverseUp)
