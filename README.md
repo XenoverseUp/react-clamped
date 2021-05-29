@@ -17,14 +17,17 @@ import React, { Component } from 'react'
 
 import { Clamped } from 'react-clamped'
 
-class Example extends Component {
+class Card extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <div>
+        <Clamped clamp={4}>{...your multiline content...}</Clamped>
+      </div>
+    )
   }
 }
 ```
 
 ## License
-
 
 MIT © [XenoverseUp](https://github.com/XenoverseUp)
