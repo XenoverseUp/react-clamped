@@ -61,11 +61,11 @@ const Card = () => {
 ### Props
 
 - clamp : Number
-  This prop determines how many lines should be rendered. The "**clamp**" can be used in both "Clamped" component as a prop and in "useClamped" hook as an object entry. Default value is **1**.
+    This prop determines how many lines should be rendered. The "**clamp**" can be used in both "Clamped" component as a prop and in "useClamped" hook as an object entry. Default value is **1**.
 - element : String
-  The "**element**" prop can be used in only "Clamped" component as a prop and it determines which DOM element should be used to wrap content. Default value is **"p"**.
+    The "**element**" prop can be used in only "Clamped" component as a prop and it determines which DOM element should be used to wrap content. Default value is **"p"**.
 - isClamped : Boolean
-  This prop determines if the text should be truncated. The "**isClamped**" can be used in both "Clamped" component as a prop and in "useClamped" hook as an object entry. This prop can be very handy if you want to make a "show more" button. The default value if **true**.
+    This prop determines if the text should be truncated. The "**isClamped**" can be used in both "Clamped" component as a prop and in "useClamped" hook as an object entry. This prop can be very handy if you want to make a "show more" button. The default value if **true**.
 
 ## License
 
